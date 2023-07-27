@@ -1,0 +1,68 @@
+:root {
+    --color-primario: #ffffff;
+    --color-secundario:#ffa027;
+    --color-terciario: #080808;
+    --fuente: 'Comic Neue', cursive;;
+    
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ /* ++++++++++nav+++++++++++++++ */
+.container-logo {
+    width: 4rem;
+    background-color: var(--color-secundario);
+    border-bottom-left-radius: 90%;
+    border-bottom-right-radius:  90%;
+}
+.container-nav_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: bold;
+}
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-terciario);
+    height: 10vh;
+    padding: 2rem;
+
+}
+.text-logo {
+    font-size: 2rem;
+    color: var(--color-primario);
+    font-family: var(--fuente);
+}
+.container-nav a {
+    text-decoration: none;
+    color: var(--color-primario);
+}
+.container-nav_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+background-color: rgba(38,38,38,255);
+padding: .5rem 3rem;
+border-radius: 1rem;
+}
+.container-nav_menu .bss {
+    background-color: var(--color-primario);
+    color: var(--color-terciario);
+    padding: .3rem .5rem;  
+    border-radius: 1rem;
+}
+.container-nav_secun a {
+    padding: .5rem 2rem;
+    border:  1px solid var(--color-primario);
+    border-radius: 1rem;
+}
