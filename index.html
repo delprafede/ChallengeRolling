@@ -3,6 +3,10 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- ***********BOOTSTRAP******* -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+        <!-- ***********BOOTSTRAP-ICONOS******* -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
         <!-- ***********FAVICOM******* -->
         <link rel="shortcut icon" href="./img/favicom.jpg" type="image/x-icon" />
         <!-- ***********CSS******* -->
@@ -18,27 +22,67 @@
     </head>
     <body>
         <!-- #region nav -->
-
-        <nav class="container-nav">
+        <nav class="navbar navbar-expand-lg bg-sm-body-tertiary container-nav">
+            <div class="container-fluid">
+              <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+              <div class="container-nav_logo">
+                <img src="./img/lgomessi.png" alt="logo" class="container-logo" />
+                <p class="text-logo">Messi</p>
+            </div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                  </li>
+                </ul> -->
+                <div  class="navbar-nav">
+                    <div class="container-nav_menu">
+                        <a class="bns" href="#">Inico</a>
+                        <a class="bss" href="#">Nosotros</a>
+                        <a class="bns" href="#">Equipos</a>
+                        <a class="bns" href="#">Campeonatos</a>
+                    </div>
+                    <div class="container-nav_secun">
+                        <a href="#">Acceder</a>
+                        <a class="btn-ss" href="#">Inscríbete</a>
+                    </div>
+            </div>
+              </div>
+            </div>
+          </nav>
+        <!-- <nav class="container-nav">
             <div class="container-nav_logo">
                 <img src="./img/lgomessi.png" alt="logo" class="container-logo" />
                 <p class="text-logo">Messi</p>
             </div>
             <div class="container-nav_menu">
-                <a class="bns" href="#">Home</a>
-                <a class="bss" href="#">Abaout</a>
-                <a class="bns" href="#">Equipment</a>
-                <a class="bns" href="#">Championships</a>
+                <a class="bns" href="#">Inico</a>
+                <a class="bss" href="#">Nosotros</a>
+                <a class="bns" href="#">Equipos</a>
+                <a class="bns" href="#">Campeonatos</a>
             </div>
             <div class="container-nav_secun">
-                <a href="#">Log in</a>
-                <a class="btn-ss" href="#">Sign up</a>
+                <a href="#">Acceder</a>
+                <a class="btn-ss" href="#">Inscríbete</a>
             </div>
-        </nav>
+        </nav> -->
 
         <!-- #endregion nav -->
         <!-- #region main -->
         <main class="container-main">
+
             <div class="container-main-parrafo">
                 <p class="titulo-body">M</p>
                 <p class="titulo-body">e</p>
@@ -46,8 +90,65 @@
                 <p class="titulo-body">s</p>
                 <p class="titulo-body">i</p>
             </div>
+
+            <article class="container-main-img">
+
+                <div class="bg-color"></div>
+                <div class="bg-img0"></div>
+                <div class="bg-img1"></div>
+            </article>
+
+
+            <article class="container-titulo-main">
+                <div class="container-iconos">
+                    <ul class="container-ul">
+                        <li><a class="iconos"><i class="bi bi-play"></i></a></li>
+                        <li><a class="iconos"><i class="bi bi-mic-fill"></i></a></li>
+                        <li><a class="iconos"><i class="bi bi-dribbble"></i></a></li>
+                    </ul>
+                </div>
+                <div>
+                    <svg width="50px" height="50px"
+                        viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" stroke="ffff"><g
+                            id="SVGRepo_bgCarrier" stroke-width="0"></g><g
+                            id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                            stroke-linejoin="round"></g><g
+                            id="SVGRepo_iconCarrier"> <path
+                                d="M7 17L17 7M17 7H8M17 7V16" stroke="#fff"
+                                stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"></path> </g></svg>
+                    <p class="parrafo">
+                        El mejor jugador del mundo presentado por codeDelPra
+                    </p>
+                </div>
+                
+                <h1 class="tiutlo">Messi</h1>
+                <div class="container-subtt-arrow">
+                    <a class="ancor-subt" href="">Juega Más</a>
+                    <a class="ancor-subt-arrow" href="">   <svg width="20px" height="20px"
+                        viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" stroke="ffff"><g
+                            id="SVGRepo_bgCarrier" stroke-width="0"></g><g
+                            id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                            stroke-linejoin="round"></g><g
+                            id="SVGRepo_iconCarrier"> <path
+                                d="M7 17L17 7M17 7H8M17 7V16" stroke="#fff"
+                                stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"></path> </g></svg></a>
+                </div>
+                <div class="container-iconos">
+                    <ul class="container-ul">
+                        <li><a class="iconos"><i class="bi bi-facebook"></i></a></li>
+                        <li><a class="iconos"><i class="bi bi-instagram"></i></a></li>
+                        <li><a class="iconos"><i class="bi bi-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </article>
+
         </main>
 
         <!-- #endregion main -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     </body>
 </html>

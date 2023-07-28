@@ -2,11 +2,12 @@
     --color-primario: #ffffff;
     --color-secundario: #ffa027;
     --color-terciario: #080808;
-    --color-cuaternario: #000000;
+    --color-cuaternario-black: #000000;
 
     --fuente: 'Comic Neue', cursive;
-    ;
-
+    --w-img: 32rem;
+    --h-img: 32rem;
+    --background-color-opacity: rgba(38, 38, 38, 255);
 }
 
 
@@ -15,7 +16,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
     font-weight: 700;
 }
 
@@ -67,7 +68,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
-    background-color: rgba(38, 38, 38, 255);
+    background-color: var(--background-color-opacity);
     padding: .5rem 3rem;
     border-radius: 1rem;
 }
@@ -87,25 +88,19 @@ body {
 
 .container-nav_secun .btn-ss {
     background-color: var(--color-secundario);
-    color: var(--color-cuaternario);
+    color: var(--color-cuaternario-black);
 }
 
 /* #endregion nav */
 
 /* #region main */
-.container-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-
-
-}
 
 .titulo-body {
-    font-size: 400px;
+    font-size: 450px;
     color: transparent;
     -webkit-text-stroke: 2px white;
+    
+    
 }
 .container-main-parrafo {
     display: flex;
@@ -114,7 +109,119 @@ body {
     justify-content: center;
 }
 
+.container-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    justify-content: center;
+}
 
+.container-main-img {
+    position: absolute;
+    border: 1px solid red;
+    display: flex;
+    z-index: 10;
+    margin-top: 1rem;
+}
+
+.bg-color {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: var(--w-img);
+    height: var(--h-img);
+    background-color: var(--color-secundario);
+    border-radius: 50%;
+    border: .5rem solid (--color-cuaternario-black);
+}
+
+
+
+
+.bg-img0 {
+    width: var(--w-img);
+    height: var(--h-img);
+    background-image: url(./img/imgcirc1.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    border: .5rem solid white;
+    margin-left: -10rem;
+
+}
+.bg-img1{
+    width: var(--w-img);
+    height: var(--h-img);
+    background-image: url(./img/imgcirc02.avif);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    border: .5rem solid white;
+    /* position:absolute; */
+    margin-left: -10rem;
+}
+.container-titulo-main {
+    position: absolute;
+    width: 100%;
+    border: 2px solid white;
+    z-index: 20;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.parrafo {
+    width: 150px;
+    margin-left: 1rem;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+.container-ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.container-iconos {
+    display: flex;
+    justify-content: start;
+}
+ul {
+    margin-bottom: 0;
+    padding-left: 0;
+}
+.iconos {
+    color: var(--color-primario);
+    width: 30px;
+    height: 30px;
+    /* font-size: 1.2rem; */
+    background-color: var(--background-color-opacity);
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+.tiutlo {
+    font-size: 10rem;
+    font-weight: bold;
+}
+.container-subtt-arrow {
+    display: flex;
+}
+.ancor-subt {
+    color: var(--color-cuaternario-black);
+    background-color: var(--color-primario);
+    text-decoration: none;
+    padding: .5rem 2rem;
+    border-radius: 1rem; 
+    font-size: 1.5rem;  
+}
+.ancor-subt-arrow {
+    border-radius: 50%;
+    border: 2px solid var(--color-primario);
+    padding: .5rem;
+    margin-left: 0;
+}
 
 
 /* #endregion nav */
@@ -122,18 +229,21 @@ body {
 
 
 /* // Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { ... }
+ @media (min-width: 576px) { 
+    .bg-sm-body-tertiary {
+        background-color: var(--color-secundario);
+    }
+  } 
 
 /* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { ... }
+/* @media (min-width: 768px) { ... } */
 
 /* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { ... }
+/* @media (min-width: 992px) { ... } */
 
 /* // X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { ... }
+/* @media (min-width: 1200px) { ... } */
 
 /* // XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) { ... }
+/* @media (min-width: 1400px) { ... } */
 /* #endregion nav */
-
