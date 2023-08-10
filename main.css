@@ -3,11 +3,12 @@
     --color-secundario: #ffa027;
     --color-terciario: #080808;
     --color-cuaternario-black: #000000;
-
+    --color-card: #FFA846;
     --fuente: 'Comic Neue', cursive;
     --w-img: 30rem;
     --h-img: 30rem;
     --background-color-opacity: rgba(38, 38, 38, 255);
+
 }
 
 
@@ -125,8 +126,8 @@ body {
 }
 
 .bg-w-h {
-width: 350px;
-height: 350px;
+    width: 350px;
+    height: 350px;
 }
 
 .bg-color {
@@ -150,7 +151,7 @@ height: 350px;
     background-size: cover;
     border-radius: 50%;
     border: .5rem solid var(--color-cuaternario-black);
-    
+
 
 }
 
@@ -161,7 +162,7 @@ height: 350px;
     background-size: cover;
     border-radius: 50%;
     border: .5rem solid var(--color-cuaternario-black);
-   
+
 }
 
 .container-titulo-main {
@@ -245,6 +246,93 @@ ul {
 
 /* #endregion nav */
 
+/* #region footer-card */
+.bg-card {
+    background-color: var(--color-card);
+
+}
+
+.img-card {
+    width: 400px;
+    height: 100%;
+    background-color: var(--color-card);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+
+.card-circle {
+    border-radius: 50%;
+    width: 40%;
+
+    overflow: hidden;
+    height: 90%;
+    background-color: #000000;
+}
+
+.card-img {
+    width: 400px;
+    height: 100%;
+    object-fit: cover;
+    background-image: url(./img/img-card1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 2rem;
+}
+
+.card-img2 {
+    background-image: url(./img/img-card2.png);
+}
+
+.card-img3 {
+    background-image: url(./img/img-card4.png);
+   
+}
+
+.bg-card-p {
+
+    height: 100% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding-left: 1.5rem;
+}
+
+.bgopacity {
+    background-color: var(--background-color-opacity);
+}
+
+.bgblack {
+    background-color: var(--color-cuaternario-black);
+}
+
+.btn-bg {
+
+    padding: 0.5rem;
+    border-radius: 1rem;
+    color: var(--color-primario);
+    background-color: var(--background-color-opacity);
+}
+
+.container-section {
+    border-radius: 2rem !important;
+
+    overflow: hidden;
+}
+.card3 {
+    width: 100%;
+    height: 100%;
+    background-image: url(./img/img-card3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/* #endregion footer-card */
+
 /* #region bootstrap */
 
 .navbar-toggler {
@@ -259,6 +347,18 @@ ul {
     box-shadow: 0 0 0 0;
 }
 
+.row > * {
+   
+   
+    padding-right: 0;
+    padding-left: 0;
+    margin-top: var(--bs-gutter-y);
+}
+.img-fluid {
+    max-width: 100%;
+    height: 15rem;
+  }
+
 /* #endregion bootstrap */
 
 /* #region breakpoints */
@@ -267,7 +367,7 @@ ul {
 @media (min-width: 450px) {
 
     .container-main {
-        
+
         align-items: normal;
     }
 }
@@ -279,11 +379,12 @@ ul {
         background-color: var(--color-secundario);
     }
 
-    
-    
 
-   
+
+
+
 }
+
 /* @media (min-width: 602px) {
 
     .bg-w-h {
@@ -308,6 +409,10 @@ ul {
 @media (min-width: 768px) {
     .bg-body-tertiari {
         background-color: var(--color-terciario);
+    }
+
+    .container-nav_menu.container-nav_secun {
+        gap: 0;
     }
 
     .container-nav {
@@ -336,11 +441,7 @@ ul {
         color: var(--color-cuaternario-black);
     }
 
-    .container-nav_secun {
-        /* display: flex !important;
-            padding: .5rem;
-            */
-    }
+
 
     .container-nav_secun a {
         padding: .5rem 1rem;
@@ -383,15 +484,17 @@ ul {
         justify-content: space-between;
         align-items: center;
     }
+
     .w-70 {
         flex-direction: row !important;
         width: 65%;
     }
+
     .container-ul {
-       
+
         display: flex;
         flex-direction: column;
-     
+
     }
 }
 
@@ -400,6 +503,7 @@ ul {
 
         justify-content: space-between;
     }
+
     .bg-img0 {
         margin-left: -10rem;
     }
@@ -407,6 +511,7 @@ ul {
     .bg-img1 {
         margin-left: -10rem;
     }
+
     .bg-secondary {
         background-color: transparent !important;
     }
