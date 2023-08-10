@@ -247,6 +247,17 @@ ul {
 /* #endregion nav */
 
 /* #region footer-card */
+.container-footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.container-footer section {
+    width: 80%;
+    max-width: 30rem;
+}
 .bg-card {
     background-color: var(--color-card);
 
@@ -315,6 +326,16 @@ ul {
     color: var(--color-primario);
     background-color: var(--background-color-opacity);
 }
+.ul-card {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    color: white;
+    z-index: 10;
+    justify-content: center;
+    align-items: end;
+    height: 70%;
+}
 
 .container-section {
     border-radius: 2rem !important;
@@ -353,6 +374,8 @@ ul {
     padding-right: 0;
     padding-left: 0;
     margin-top: var(--bs-gutter-y);
+
+
 }
 .img-fluid {
     max-width: 100%;
