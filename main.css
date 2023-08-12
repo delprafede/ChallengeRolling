@@ -285,15 +285,11 @@ ul {
     max-width: 30rem;
 }
 
-.bg-card {
-    background-color: var(--color-card);
 
-}
 
 .img-card {
     width: 400px;
     height: 100%;
-    background-color: var(--color-card);
     display: flex;
     justify-content: end;
     align-items: center;
@@ -303,7 +299,6 @@ ul {
 .card-circle {
     border-radius: 50%;
     width: 40%;
-
     overflow: hidden;
     height: 90%;
     background-color: #000000;
@@ -350,7 +345,7 @@ ul {
 
     padding: 0.5rem;
     border-radius: 1rem;
-    border: 1px solid white;
+    border: 1px solid var(--color-primario);
     color: var(--color-primario);
     background-color: var(--background-color-opacity);
 }
@@ -360,13 +355,19 @@ ul {
 section .btn-op-white {
     display: flex;
     flex-wrap: wrap;
-    background-color: rgba(78, 76, 76, 0.696);
+    border: none;
+    background-color: rgba(158, 156, 156, 0.507);
     position: absolute;
     width: 80%; 
     top: 65%;
     padding: 1rem 0;
     justify-content: space-around;
 
+}
+.bgopac {
+    background-color: rgba(185, 180, 180, 0.377);
+    border-radius: .5rem;
+    padding: 0 .2rem;
 }
 .btn-op-white a {
     color: var(--color-primario);
@@ -434,7 +435,7 @@ section .btn-op-white {
 
 .img-fluid {
     max-width: 100%;
-    height: 15rem;
+    height: 13rem;
 }
 
 /* #endregion bootstrap */
@@ -501,6 +502,10 @@ section .btn-op-white {
     .container-nav_menu.container-nav_secun {
         gap: 0;
         /* padding: 0; */
+    }
+    .img-fluid {
+        max-width: 100%;
+        height: 15rem;
     }
 
     .container-nav {
@@ -611,6 +616,10 @@ section .btn-op-white {
 
         justify-content: space-between;
     }
+    .w-70 {
+        flex-direction: row !important;
+        width: 75%;
+    }
 
     .bg-img0 {
         margin-left: -10rem;
@@ -644,7 +653,7 @@ section .btn-op-white {
 
     }
     .container-main-img {
-        gap: 6rem;
+        gap: 5rem;
     }
 }
 
