@@ -276,6 +276,7 @@ ul {
     justify-content: center;
     gap: 1rem;
     flex-wrap: wrap;
+    padding-bottom: 1rem;
     
 }
 
@@ -312,18 +313,18 @@ ul {
     width: 400px;
     height: 100%;
     object-fit: cover;
-    background-image: url(./img/img-card1.png);
+    background-image: url(./img/imgcard02.webp);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 2rem;
+    background-position:left;
 }
 
 .card-img2 {
-    background-image: url(./img/img-card2.png);
+    background-image: url(./img/imgcard08.webp);
 }
 
 .card-img3 {
-    background-image: url(./img/img-card4.png);
+    background-image: url(./img/imgcard07.webp);
 
 }
 
