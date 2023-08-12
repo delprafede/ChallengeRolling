@@ -642,6 +642,9 @@ section .btn-op-white {
         height: 10rem;
 
     }
+    .container-main-img {
+        gap: 6rem;
+    }
 }
 
 
@@ -654,6 +657,7 @@ section .btn-op-white {
     .bg-img1 {
         margin-left: -8rem;
     }
+    
  }
 
 
