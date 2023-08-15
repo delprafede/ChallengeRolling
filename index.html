@@ -22,19 +22,19 @@
             rel="stylesheet" />
         <title>Campeones del Mundo</title>
     </head>
-    <body>
+    <body class="container-xl text-xl-center">
         <!-- #region nav -->
 
         <header>
 
-            <nav class="navbar navbar-expand-md  bg-body-tertiari">
+            <nav class="navbar navbar-expand-md  bg-body-tertiari max-w">
                 <div
                     class="container-fluid d-flex justify-content-between align-items-center">
                     <a class="navbar-brand" href="./index.html">
                         <div class="container-nav_logo">
                             <img src="./img/lgomessi.png" alt="logo"
                                 class="container-logo" />
-                            <p class="text-logo">Messi</p>
+                            <p class="text-logo d-md-none d-lg-block">Messi</p>
                         </div>
                     </a>
                     <button class="navbar-toggler" type="button"
@@ -44,38 +44,38 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div
-                        class="collapse navbar-collapse d-md-flex justify-content-md-center"
+                        class="collapse navbar-collapse d-md-flex justify-content-md-center text-start"
                         id="navbarNav">
                         <ul
-                            class="navbar-nav container-nav_menu align-items-lg-center">
+                            class="navbar-nav container-nav_menu align-items-lg-center justify-content-center  ps-2 ps-md-0">
                             <li class="nav-item fst-italic">
-                                <a class="nav-link" aria-current="page"
+                                <a class="nav-link fs-5" aria-current="page"
                                     href="#">Inico</a>
                             </li>
                             <li class="nav-item bss">
-                                <a class="nav-link fst-italic" href="#">Nosotros</a>
+                                <a class="nav-link fst-italic fs-5" href="#">Nosotros</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link fst-italic" href="#">Equipos</a>
+                                <a class="nav-link fs-5 fst-italic" href="#">Equipos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link fst-italic" href="#">Campeonatos</a>
+                                <a class="nav-link fs-5 fst-italic" href="#">Campeonatos</a>
                             </li>
                             <li class="nav-item d-md-none">
-                                <a class="nav-link fst-italic" href="#">Acceder</a>
+                                <a class="nav-link fs-5 fst-italic" href="#">Acceder</a>
                             </li>
                             <li class="nav-item d-md-none">
-                                <a class="nav-link fst-italic" href="#">Inscríbete</a>
+                                <a class="nav-link fs-5 fst-italic" href="#">Inscríbete</a>
                             </li>
                         </ul>
                     </div>
                     <ul
                         class="navbar-nav container-nav_menu container-nav_secun d-none d-md-block d-md-flex">
                         <li class="nav-item ">
-                            <a class="nav-link fst-italic" href="#">Acceder</a>
+                            <a class="nav-link fst-italic fs-5" href="#">Acceder</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fst-italic btn-ss" href="#">Inscríbete</a>
+                            <a class="nav-link fst-italic btn-ss fs-5" href="#">Inscríbete</a>
                         </li>
                     </ul>
                 </div>
@@ -86,7 +86,7 @@
 
         <!-- #region main -->
 
-        <main class="container-main justify-content-center">
+        <main class="container-main justify-content-center max-w">
 
             <div class="container-main-parrafo border-danger w-100 ">
                 <p class="titulo-body">M</p>
@@ -172,12 +172,13 @@
 
         </main>
         <!-- #endregion main -->
+        
         <!-- #region footer -->
 
         
 
             <footer
-                class="container-footer ">
+                class="container-footer max-w">
 
                 <section
                     class="container-section d-flex dm  position-relative justify-content-center align-items-center bgopacity">
@@ -268,6 +269,11 @@
             </footer>
         
         <!-- #endregion footer -->
+        
+        <!-- #region script -->
+
+
+        
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
@@ -282,6 +288,6 @@
                 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
                 
                 </script>
-
+<!-- #endregion script -->
     </body>
 </html>
