@@ -26,6 +26,7 @@ body {
 
 .container-fluid {
   --bs-gutter-x: 0 !important;
+  padding: .5rem;
 }
 
 .bg-body-tertiari {
@@ -111,7 +112,7 @@ p {
   justify-content: center;
   flex-wrap: wrap;
   z-index: 10;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .bg-w-h {
@@ -449,7 +450,7 @@ section .btn-op-white {
 
 @media (min-width: 768px) {
   .fs-5 {
-    font-size: 1.3rem !important;
+    font-size: 1rem !important;
   }
 
   .bg-body-tertiari {
