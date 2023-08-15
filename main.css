@@ -405,6 +405,13 @@ section .btn-op-white {
     background-repeat: no-repeat;
     background-position: center;
 }
+.bi {
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    font-size: 2rem;
+   
+}
 
 
 /* #endregion footer-card */
