@@ -360,7 +360,7 @@ section .btn-op-white {
     position: absolute;
     width: 80%; 
     top: 65%;
-    padding: 1rem 0;
+    
     justify-content: space-around;
 
 }
@@ -442,7 +442,7 @@ section .btn-op-white {
 
 .img-fluid {
     max-width: 100%;
-    height: 13rem;
+    height: 10rem;
 }
 
 /* #endregion bootstrap */
@@ -458,7 +458,13 @@ section .btn-op-white {
     }
 }
 
-
+@media  ( min-width: 528px) {
+    .img-fluid {
+        max-width: 100%;
+        height: 13rem;
+    }
+    
+}
 
 @media (min-width: 576px) {
     .bg-sm-body-tertiary {
