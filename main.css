@@ -223,23 +223,24 @@ ul {
 
 .container-subtt-arrow {
   display: flex;
+  align-items: center;
 }
 
 .ancor-subt {
   color: var(--color-cuaternario-black);
   background-color: var(--color-primario);
   text-decoration: none;
-  padding: 0.5rem 2rem;
-  border-radius: 1rem;
-  font-size: 1.5rem;
-  font-weight: normal;
+  padding: 0.5rem 1rem;
+  border-radius: 4rem;
+  font-size: 1.3rem;
 }
 
 .ancor-subt-arrow {
   border-radius: 50%;
   border: 2px solid var(--color-primario);
-  padding: 1rem;
+  padding: 0.5rem;
   margin-left: 0;
+
 }
 
 .ancor-subt-arrow:hover {
@@ -583,18 +584,21 @@ section .btn-op-white {
     width: 90%;
     transition: all 0.6s ease-in-out;
   }
+  .container-arrow-parrafo {
+   flex-direction: column;
+  }
 
   .bg-img0 {
-    margin-left: -10rem;
+    margin-left: -15rem;
   }
 
   .bg-img1 {
-    margin-left: -10rem;
+    margin-left: -15rem;
   }
 
   .bg-w-h {
-    width: 23rem;
-    height: 23rem;
+    width: 25rem;
+    height: 25rem;
   }
 
   .bg-secondary {
